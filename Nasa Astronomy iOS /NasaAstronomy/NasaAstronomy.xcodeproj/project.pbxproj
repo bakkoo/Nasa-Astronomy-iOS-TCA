@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2754D2342B60288600AC454D /* NasaAstronomyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D2332B60288600AC454D /* NasaAstronomyApp.swift */; };
+		2754D2382B60288700AC454D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2754D2372B60288700AC454D /* Assets.xcassets */; };
+		2754D23B2B60288700AC454D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2754D23A2B60288700AC454D /* Preview Assets.xcassets */; };
+		2754D2452B6029A300AC454D /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D2442B6029A300AC454D /* APODModel.swift */; };
+		2754D2482B602B7400AC454D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2754D2472B602B7400AC454D /* ComposableArchitecture */; };
+		2754D24A2B602BBA00AC454D /* APODFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D2492B602BBA00AC454D /* APODFeature.swift */; };
+		2754D24D2B602BD400AC454D /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D24C2B602BD400AC454D /* APODView.swift */; };
+		2754D2552B6036D800AC454D /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D2542B6036D800AC454D /* Dependencies.swift */; };
+		2754D25B2B60507000AC454D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2754D25A2B60507000AC454D /* Kingfisher */; };
+		2754D2602B61348900AC454D /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D25F2B61348900AC454D /* TabBar.swift */; };
+		2754D2652B614D2F00AC454D /* APODDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D2642B614D2F00AC454D /* APODDetailedView.swift */; };
+		27F59A692B61C25200748DFD /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 27F59A682B61C25200748DFD /* Networking */; };
+		27F59A6D2B61C63200748DFD /* Color+Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = 27F59A6C2B61C63200748DFD /* Color+Extensions */; };
+		27F59A722B61C92200748DFD /* ImageLoader in Frameworks */ = {isa = PBXBuildFile; productRef = 27F59A712B61C92200748DFD /* ImageLoader */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2754D2302B60288600AC454D /* NasaAstronomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAstronomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2754D2332B60288600AC454D /* NasaAstronomyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAstronomyApp.swift; sourceTree = "<group>"; };
+		2754D2372B60288700AC454D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2754D23A2B60288700AC454D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2754D2442B6029A300AC454D /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
+		2754D2492B602BBA00AC454D /* APODFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODFeature.swift; sourceTree = "<group>"; };
+		2754D24C2B602BD400AC454D /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
+		2754D2542B6036D800AC454D /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		2754D25F2B61348900AC454D /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		2754D2642B614D2F00AC454D /* APODDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDetailedView.swift; sourceTree = "<group>"; };
+		2754D2662B61BC5B00AC454D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = ../Networking; sourceTree = "<group>"; };
+		27F59A6B2B61C5C500748DFD /* Color+Extensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Color+Extensions"; path = "../Color+Extensions"; sourceTree = "<group>"; };
+		27F59A6E2B61C70F00748DFD /* ImageLoader */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ImageLoader; path = ../ImageLoader; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2754D22D2B60288600AC454D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F59A692B61C25200748DFD /* Networking in Frameworks */,
+				2754D25B2B60507000AC454D /* Kingfisher in Frameworks */,
+				27F59A6D2B61C63200748DFD /* Color+Extensions in Frameworks */,
+				27F59A722B61C92200748DFD /* ImageLoader in Frameworks */,
+				2754D2482B602B7400AC454D /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2754D2272B60288600AC454D = {
+			isa = PBXGroup;
+			children = (
+				27F59A6E2B61C70F00748DFD /* ImageLoader */,
+				27F59A6B2B61C5C500748DFD /* Color+Extensions */,
+				2754D2662B61BC5B00AC454D /* Networking */,
+				2754D2322B60288600AC454D /* NasaAstronomy */,
+				2754D2312B60288600AC454D /* Products */,
+				27F59A672B61C24700748DFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2754D2312B60288600AC454D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2754D2302B60288600AC454D /* NasaAstronomy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2754D2322B60288600AC454D /* NasaAstronomy */ = {
+			isa = PBXGroup;
+			children = (
+				27F59A6F2B61C8B000748DFD /* App */,
+				2754D25E2B6133FB00AC454D /* Navigation */,
+				2754D2532B6036CC00AC454D /* Dependencies */,
+				2754D2422B60298A00AC454D /* Shared */,
+				2754D2412B60295000AC454D /* Features */,
+				27F59A702B61C8B800748DFD /* Resources */,
+			);
+			path = NasaAstronomy;
+			sourceTree = "<group>";
+		};
+		2754D2392B60288700AC454D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2754D23A2B60288700AC454D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2754D2412B60295000AC454D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2754D24B2B602BC000AC454D /* APODFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2754D2422B60298A00AC454D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2754D2432B60299000AC454D /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2754D2432B60299000AC454D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2754D2442B6029A300AC454D /* APODModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2754D24B2B602BC000AC454D /* APODFeature */ = {
+			isa = PBXGroup;
+			children = (
+				2754D2492B602BBA00AC454D /* APODFeature.swift */,
+				2754D24C2B602BD400AC454D /* APODView.swift */,
+				2754D2642B614D2F00AC454D /* APODDetailedView.swift */,
+			);
+			path = APODFeature;
+			sourceTree = "<group>";
+		};
+		2754D2532B6036CC00AC454D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				2754D2542B6036D800AC454D /* Dependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		2754D25E2B6133FB00AC454D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2754D25F2B61348900AC454D /* TabBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		27F59A672B61C24700748DFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27F59A6F2B61C8B000748DFD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2754D2332B60288600AC454D /* NasaAstronomyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		27F59A702B61C8B800748DFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2754D2392B60288700AC454D /* Preview Content */,
+				2754D2372B60288700AC454D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2754D22F2B60288600AC454D /* NasaAstronomy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2754D23E2B60288700AC454D /* Build configuration list for PBXNativeTarget "NasaAstronomy" */;
+			buildPhases = (
+				2754D22C2B60288600AC454D /* Sources */,
+				2754D22D2B60288600AC454D /* Frameworks */,
+				2754D22E2B60288600AC454D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NasaAstronomy;
+			packageProductDependencies = (
+				2754D2472B602B7400AC454D /* ComposableArchitecture */,
+				2754D25A2B60507000AC454D /* Kingfisher */,
+				27F59A682B61C25200748DFD /* Networking */,
+				27F59A6C2B61C63200748DFD /* Color+Extensions */,
+				27F59A712B61C92200748DFD /* ImageLoader */,
+			);
+			productName = NasaAstronomy;
+			productReference = 2754D2302B60288600AC454D /* NasaAstronomy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2754D2282B60288600AC454D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2754D22F2B60288600AC454D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 2754D22B2B60288600AC454D /* Build configuration list for PBXProject "NasaAstronomy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2754D2272B60288600AC454D;
+			packageReferences = (
+				2754D2462B602B7400AC454D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				2754D2592B60507000AC454D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 2754D2312B60288600AC454D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2754D22F2B60288600AC454D /* NasaAstronomy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2754D22E2B60288600AC454D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2754D23B2B60288700AC454D /* Preview Assets.xcassets in Resources */,
+				2754D2382B60288700AC454D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2754D22C2B60288600AC454D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2754D2602B61348900AC454D /* TabBar.swift in Sources */,
+				2754D24D2B602BD400AC454D /* APODView.swift in Sources */,
+				2754D24A2B602BBA00AC454D /* APODFeature.swift in Sources */,
+				2754D2552B6036D800AC454D /* Dependencies.swift in Sources */,
+				2754D2342B60288600AC454D /* NasaAstronomyApp.swift in Sources */,
+				2754D2652B614D2F00AC454D /* APODDetailedView.swift in Sources */,
+				2754D2452B6029A300AC454D /* APODModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2754D23C2B60288700AC454D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2754D23D2B60288700AC454D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2754D23F2B60288700AC454D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NasaAstronomy/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GQ9323TQC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NasaAstronomy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2754D2402B60288700AC454D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NasaAstronomy/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 4GQ9323TQC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NasaAstronomy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2754D22B2B60288600AC454D /* Build configuration list for PBXProject "NasaAstronomy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2754D23C2B60288700AC454D /* Debug */,
+				2754D23D2B60288700AC454D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2754D23E2B60288700AC454D /* Build configuration list for PBXNativeTarget "NasaAstronomy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2754D23F2B60288700AC454D /* Debug */,
+				2754D2402B60288700AC454D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2754D2462B602B7400AC454D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.0;
+			};
+		};
+		2754D2592B60507000AC454D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2754D2472B602B7400AC454D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2754D2462B602B7400AC454D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		2754D25A2B60507000AC454D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2754D2592B60507000AC454D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		27F59A682B61C25200748DFD /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		27F59A6C2B61C63200748DFD /* Color+Extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Color+Extensions";
+		};
+		27F59A712B61C92200748DFD /* ImageLoader */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImageLoader;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2754D2282B60288600AC454D /* Project object */;
+}
