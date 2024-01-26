@@ -11,6 +11,7 @@ import Dependencies
 import SwiftUI
 import Networking
 import ImageLoader
+import Kingfisher
 
 struct APODFeature: Reducer {
     //MARK: - Dependencies
@@ -43,7 +44,7 @@ struct APODFeature: Reducer {
                 state.isLoading = true
                 return .run { send in
                     do {
-                        let apodModel = try await apiClient.request(endpoint: .nasaAPOD, apiConfiguration: .nasaAPI, type: APODModel.self)
+                        let apodModel = try await apiClient.request(endpoint: .nasaApod, apiConfiguration: .nasaAPI, type: APODModel.self)
                         await send(.apodResponse(apodModel))
                     } catch {
                         await send(.errorReceivedApod(err: error))
