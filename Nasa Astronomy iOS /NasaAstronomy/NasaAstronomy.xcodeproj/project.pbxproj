@@ -55,6 +55,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270E3EED2B63F73900669B9C /* APOD Search By Date Feature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "APOD Search By Date Feature";
+			sourceTree = "<group>";
+		};
 		2754D2272B60288600AC454D = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +106,8 @@
 		2754D2412B60295000AC454D /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				2754D24B2B602BC000AC454D /* APODFeature */,
+				270E3EED2B63F73900669B9C /* APOD Search By Date Feature */,
+				2754D24B2B602BC000AC454D /* APOD Feature */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -120,14 +128,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2754D24B2B602BC000AC454D /* APODFeature */ = {
+		2754D24B2B602BC000AC454D /* APOD Feature */ = {
 			isa = PBXGroup;
 			children = (
 				2754D2492B602BBA00AC454D /* APODFeature.swift */,
 				2754D24C2B602BD400AC454D /* APODView.swift */,
 				2754D2642B614D2F00AC454D /* APODDetailedView.swift */,
 			);
-			path = APODFeature;
+			path = "APOD Feature";
 			sourceTree = "<group>";
 		};
 		2754D2532B6036CC00AC454D /* Dependencies */ = {

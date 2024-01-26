@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+public enum APIError: Error {
+    case invalidURL
+    case networkError(Error)
+    case invalidResponse
+    case decodingError(Error)
+}
