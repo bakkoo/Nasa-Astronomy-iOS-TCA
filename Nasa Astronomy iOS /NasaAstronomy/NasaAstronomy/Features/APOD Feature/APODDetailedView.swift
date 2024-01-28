@@ -12,7 +12,7 @@ import Color_Extensions
 
 struct APODDetailedView: View {
     let store: StoreOf<APODFeature>
-    
+
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
             ScrollView {

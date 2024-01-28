@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct APODModel: Codable, Equatable {
+struct APODModel: Codable, Equatable, Identifiable {
+    var id: UUID {
+        UUID()
+    }
+    
     let explanation: String?
     let url: String
-    let hdurl: String
+    let hdurl: String?
     let date: String?
     let title: String?
     

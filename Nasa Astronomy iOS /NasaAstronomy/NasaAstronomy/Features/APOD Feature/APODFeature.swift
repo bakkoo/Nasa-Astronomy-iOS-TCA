@@ -11,7 +11,6 @@ import Dependencies
 import SwiftUI
 import Networking
 import ImageLoader
-import Kingfisher
 
 struct APODFeature: Reducer {
     //MARK: - Dependencies
@@ -49,13 +48,12 @@ struct APODFeature: Reducer {
                     } catch {
                         await send(.errorReceivedApod(err: error))
                     }
-                    
                 }
             case .apodResponse(let response):
                 state.apodModel = response
                 return .run { send in
                     await send(.fetchImage(urlString: response.url))
-                    await send(.fetchHDImage(urlString: response.hdurl))
+                    await send(.fetchHDImage(urlString: response.hdurl ?? ""))
                 }
             case .loadingCompleted:
                 state.isLoading = false
