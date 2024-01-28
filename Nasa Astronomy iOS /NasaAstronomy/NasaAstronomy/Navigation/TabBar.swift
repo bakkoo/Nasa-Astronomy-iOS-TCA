@@ -19,7 +19,7 @@ struct TabBar: View {
     var body: some View {
         TabView(selection: $selectedTab) {
             NavigationView {
-                HomeView()
+                ApodView()
             }
             .tabItem {
                 tabBarItem(tab: .home, systemImage: "moon.circle.fill", title: "Apod")
@@ -27,10 +27,10 @@ struct TabBar: View {
             .tag(Tab.home)
             
             NavigationView {
-                FavoritesView()
+                ApodSearchView()
             }
             .tabItem {
-                tabBarItem(tab: .favorites, systemImage: "star.fill", title: "Favorites")
+                tabBarItem(tab: .favorites, systemImage: "magnifyingglass", title: "Search")
             }
             .tag(Tab.favorites)
             
@@ -52,7 +52,7 @@ struct TabBar: View {
     }
 }
 
-struct HomeView: View {
+struct ApodView: View {
     var body: some View {
         APODView(store: Store(initialState: APODFeature.State(),
                               reducer: {
@@ -61,10 +61,12 @@ struct HomeView: View {
     }
 }
 
-struct FavoritesView: View {
+struct ApodSearchView: View {
     var body: some View {
-        Text("Favorites View")
-            .navigationTitle("Favorites")
+        SearchApodView(store: Store(initialState: APODSearchFeature.State(),
+                                    reducer: {
+            APODSearchFeature()._printChanges()
+        }))
     }
 }
 

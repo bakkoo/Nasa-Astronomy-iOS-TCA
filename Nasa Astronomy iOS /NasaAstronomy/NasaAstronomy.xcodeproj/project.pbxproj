@@ -18,6 +18,10 @@
 		2754D25B2B60507000AC454D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2754D25A2B60507000AC454D /* Kingfisher */; };
 		2754D2602B61348900AC454D /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D25F2B61348900AC454D /* TabBar.swift */; };
 		2754D2652B614D2F00AC454D /* APODDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754D2642B614D2F00AC454D /* APODDetailedView.swift */; };
+		27C11ED02B63FBE200DDCB29 /* APODSearchFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C11ECF2B63FBE200DDCB29 /* APODSearchFeature.swift */; };
+		27C11ED22B63FFC800DDCB29 /* APODSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C11ED12B63FFC800DDCB29 /* APODSearchView.swift */; };
+		27C11ED52B66ABC500DDCB29 /* ApodItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C11ED42B66ABC500DDCB29 /* ApodItemRow.swift */; };
+		27C11ED82B66FA1900DDCB29 /* ApodItemReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C11ED72B66FA1900DDCB29 /* ApodItemReducer.swift */; };
 		27F59A692B61C25200748DFD /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 27F59A682B61C25200748DFD /* Networking */; };
 		27F59A6D2B61C63200748DFD /* Color+Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = 27F59A6C2B61C63200748DFD /* Color+Extensions */; };
 		27F59A722B61C92200748DFD /* ImageLoader in Frameworks */ = {isa = PBXBuildFile; productRef = 27F59A712B61C92200748DFD /* ImageLoader */; };
@@ -35,6 +39,10 @@
 		2754D25F2B61348900AC454D /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		2754D2642B614D2F00AC454D /* APODDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDetailedView.swift; sourceTree = "<group>"; };
 		2754D2662B61BC5B00AC454D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = ../Networking; sourceTree = "<group>"; };
+		27C11ECF2B63FBE200DDCB29 /* APODSearchFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchFeature.swift; sourceTree = "<group>"; };
+		27C11ED12B63FFC800DDCB29 /* APODSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODSearchView.swift; sourceTree = "<group>"; };
+		27C11ED42B66ABC500DDCB29 /* ApodItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodItemRow.swift; sourceTree = "<group>"; };
+		27C11ED72B66FA1900DDCB29 /* ApodItemReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodItemReducer.swift; sourceTree = "<group>"; };
 		27F59A6B2B61C5C500748DFD /* Color+Extensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Color+Extensions"; path = "../Color+Extensions"; sourceTree = "<group>"; };
 		27F59A6E2B61C70F00748DFD /* ImageLoader */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ImageLoader; path = ../ImageLoader; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,13 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		270E3EED2B63F73900669B9C /* APOD Search By Date Feature */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "APOD Search By Date Feature";
-			sourceTree = "<group>";
-		};
 		2754D2272B60288600AC454D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +86,7 @@
 		2754D2322B60288600AC454D /* NasaAstronomy */ = {
 			isa = PBXGroup;
 			children = (
+				27C11ED32B66ABAF00DDCB29 /* Reusable components */,
 				27F59A6F2B61C8B000748DFD /* App */,
 				2754D25E2B6133FB00AC454D /* Navigation */,
 				2754D2532B6036CC00AC454D /* Dependencies */,
@@ -106,7 +108,7 @@
 		2754D2412B60295000AC454D /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				270E3EED2B63F73900669B9C /* APOD Search By Date Feature */,
+				27C11ECE2B63FBCB00DDCB29 /* APOD Search Feature */,
 				2754D24B2B602BC000AC454D /* APOD Feature */,
 			);
 			path = Features;
@@ -152,6 +154,32 @@
 				2754D25F2B61348900AC454D /* TabBar.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		27C11ECE2B63FBCB00DDCB29 /* APOD Search Feature */ = {
+			isa = PBXGroup;
+			children = (
+				27C11ECF2B63FBE200DDCB29 /* APODSearchFeature.swift */,
+				27C11ED12B63FFC800DDCB29 /* APODSearchView.swift */,
+			);
+			path = "APOD Search Feature";
+			sourceTree = "<group>";
+		};
+		27C11ED32B66ABAF00DDCB29 /* Reusable components */ = {
+			isa = PBXGroup;
+			children = (
+				27C11ED62B66F9FA00DDCB29 /* ApodItemRow */,
+			);
+			path = "Reusable components";
+			sourceTree = "<group>";
+		};
+		27C11ED62B66F9FA00DDCB29 /* ApodItemRow */ = {
+			isa = PBXGroup;
+			children = (
+				27C11ED42B66ABC500DDCB29 /* ApodItemRow.swift */,
+				27C11ED72B66FA1900DDCB29 /* ApodItemReducer.swift */,
+			);
+			path = ApodItemRow;
 			sourceTree = "<group>";
 		};
 		27F59A672B61C24700748DFD /* Frameworks */ = {
@@ -259,11 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C11ED02B63FBE200DDCB29 /* APODSearchFeature.swift in Sources */,
 				2754D2602B61348900AC454D /* TabBar.swift in Sources */,
 				2754D24D2B602BD400AC454D /* APODView.swift in Sources */,
+				27C11ED52B66ABC500DDCB29 /* ApodItemRow.swift in Sources */,
 				2754D24A2B602BBA00AC454D /* APODFeature.swift in Sources */,
 				2754D2552B6036D800AC454D /* Dependencies.swift in Sources */,
+				27C11ED22B63FFC800DDCB29 /* APODSearchView.swift in Sources */,
 				2754D2342B60288600AC454D /* NasaAstronomyApp.swift in Sources */,
+				27C11ED82B66FA1900DDCB29 /* ApodItemReducer.swift in Sources */,
 				2754D2652B614D2F00AC454D /* APODDetailedView.swift in Sources */,
 				2754D2452B6029A300AC454D /* APODModel.swift in Sources */,
 			);
